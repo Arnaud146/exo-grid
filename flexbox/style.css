@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+.container{
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background: rgb(255, 234, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 50px;
+}
+nav{
+    width: 40%;
+    height: 30vh;
+    position: absolute;
+    background: orange;
+    border-right: 30px solid green;
+    border-bottom: 30px solid green;
+    text-align: center;
+    padding-top: 2%;
+}
+main{
+    background: green;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#para{
+    width: 200px;
+    padding-left: 40%;
+    text-align: center;
+}
+.rec{
+    background-color: white;
+    margin-top: 20px;
+    width: 90%;
+    height: 10vh;
+}
+#big-rec{
+    height: 25vh;
+    background-color: white;
+    margin-top: 20px;
+    width: 90%;
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+
+}
+@media screen and (max-width:900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    header{
+        height: 10vh;
+    }
+    p{
+        text-align: center;
+    }
+    nav{
+    position: relative;
+    width: 100%;
+    border: none;
+    height: 15vh;
+    }
+    main{
+        height: 60vh;
+    }
+    #big-rec{
+        height: 10vh;
+        width: 95%;
+    }
+    #para{
+        padding: 0%;
+    }
+    #middle-rec{
+        height: 20vh;
+    }
+    .rec{
+        height: 10vh;
+        margin-top: 15px;
+        width: 95%;
+    }
+    footer{
+        height: 15vh;
+    }
+    #footer{
+        width: 150px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:600px){
+    
+    header{
+        height: 5vh;
+    }
+    nav{
+        height: 8vh;
+    }
+    main{
+        height: 72vh;
+    }
+    #big-rec{
+        height: 15vh;
+        width: 97%;
+    }
+
+    #middle-rec{
+        height: 26vh;
+    }
+    .rec{
+        height: 15vh;
+        margin-top: 10px;
+        width: 97%;
+    }
+
+}
